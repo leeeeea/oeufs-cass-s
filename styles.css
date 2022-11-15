@@ -1,4 +1,8 @@
 
+body{
+    /* background-image: url('images/Cuisine.png'); */
+    width:100%;
+}
 /* class fonctionnelles */
 .flex-container {
     display: flex;

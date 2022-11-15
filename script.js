@@ -3,7 +3,7 @@ document.querySelector("#image").addEventListener("mouseup", sourisEnHaut)
 // document.querySelector('#multiplier').addEventListener('click', multiplier)
 
 
-const audioElement = new Audio('son/hub.mp3');
+const audioElement = new Audio('son/oeuf.mp3');
 document.querySelector('#image').addEventListener('click', audio)
 function audio(){
     audioElement.play()
@@ -20,13 +20,15 @@ var score = 0
 var nb_oeufs_par_click = 1
 var bonus_multiplier = 50
 var bonus_auto_clicker = 60
-var phrase = 10
+var phrase = 100
 
 document.querySelector("#image").addEventListener("click", aJourResult)
 
 function aJourResult(){
     score = score + nb_oeufs_par_click
     document.querySelector("#result").innerHTML= "Oeufs cassés: "+ score;
+    // apparition_phrase()
+    
 }
 
 function multiplier(){
@@ -49,16 +51,20 @@ function bonus_clicker() {
     }
 }
 
-function apparition_phrase(){
-    if((score >= phrase )){
-        document.querySelector("#phrase").innerHTML;
+let phrases_aleatoires=["Les oeufs durent c'est 9mn","Les oeufs au plat c'est les meilleurs","je sais pas","aïe!"];
+
+let interval_apparition_texte = undefined;
+
+function apparition_phrase(){ 
+    if (interval_apparition_texte == undefined) {
+        interval_apparition_texte = setInterval(apparition_phrase, 10000)
     }
-    
-    
-
+    if((score >= phrase )){
+   
+    var arrete = Math.trunc (Math.random()*phrases_aleatoires.length)
+     document.querySelector("#phrase1").innerHTML= phrases_aleatoires[arrete]
+     }   
 }
-
-
-
+apparition_phrase()
 
 
