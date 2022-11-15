@@ -1,6 +1,6 @@
 
 body{
-    /* background-image: url('images/Cuisine.png'); */
+    background-image: url('images/_.jpeg');
     width:100%;
 }
 /* class fonctionnelles */
@@ -54,11 +54,12 @@ h2{
     padding: 20px 20px 20px 20px;
     /* background-color: #FDD44F; */
     background-image: url("images/oeufbabou.PNG");
-    color: rgb(251, 0, 255);
+    color: #582900;
     font-weight: bold;
     border:none;
     border-radius:50px;
     box-shadow: 1px 1px 10px #FDD44F;
+
 }
 .btn:hover{
     padding: 20px 20px 20px 20px;
