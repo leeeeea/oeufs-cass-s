@@ -1,0 +1,66 @@
+
+/* class fonctionnelles */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+img{
+display:block;
+width:100%;
+}
+
+h2{
+    background-color: #F2F4DA;
+    border-radius: 10px;
+    height: 30px;
+    
+    
+}
+
+#Bonjour{
+    text-align: center;
+    background-color:#F2F4DA;
+    width: 270px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+#image1{
+    margin: 0 auto;
+    height: 300px;
+    width: 300px;
+    margin-top: 70px;
+}
+#cookie{
+    text-align: center;
+    align-items: center;
+}
+#bonus{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+.btn{
+    padding: 20px 20px 20px 20px;
+    /* background-color: #FDD44F; */
+    background-image: url("images/oeufbabou.PNG");
+    color: rgb(251, 0, 255);
+    font-weight: bold;
+    border:none;
+    border-radius:50px;
+    box-shadow: 1px 1px 10px #FDD44F;
+}
+.btn:hover{
+    padding: 20px 20px 20px 20px;
+    color:#ffffff;
+    border:none;
+    border-radius:50px;
+    box-shadow: 1px 1px 30px #FDD44F;
+}
+
